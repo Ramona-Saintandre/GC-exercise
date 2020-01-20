@@ -6,13 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data = {
-    title:'Monas angular tutorial'
-  };
-  onLogoClicked(){
-    alert('hello World')
-  }
-  onKeyUp(newTitle:string){
-    this.data.title = newTitle;
-  }
+  title = 'updowncounter2';
 }

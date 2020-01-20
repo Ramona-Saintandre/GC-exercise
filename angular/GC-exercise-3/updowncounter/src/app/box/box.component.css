@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 3px solid green;
+    box-sizing: border-box;
+    width: 150px;
+    height: 175px;
+    padding: 15px 5px 15px 5px;
+  
+  }
+  
+  .up {
+      display: flex;
+      align-self: center;
+      border-radius: 10px;
+      width: 70px;
+      height: 30px;
+      margin-top: 5px;
+      margin-bottom: 25px;
+  }
+  
+  .down {
+    display: flex;
+    align-self: center; 
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+   margin-top:25px;
+  }
+  
