@@ -1,7 +1,13 @@
+
+// https://dev.to/valentinogagliardi/typescript-tutorial-for-beginners-the-missing-guide-part-1-52hj
 interface ILink {
   description?: string;
   id?: number;
   url: string;
+}
+interface IPost extends ILink {
+  title: string;
+  body: string;
 }
 
 function filterByTerm(input: Array<ILink>, searchTerm: string) {
