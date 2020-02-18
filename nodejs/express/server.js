@@ -9,9 +9,13 @@
 
 // let monaFacts =['crazy','tired','german','grandma','old']
 //  document.write(monaFacts);   
+
 const express = require ('express');
+
 // import { randomFacts } from './facts';
 const facts = require (',/facts');
+const factsArray = facts.randomFacts;
+const 
 
 const app = express();
 
@@ -33,10 +37,16 @@ app.get ('/facts-all', (req,res) =>{
     res.json('Getting all random Fact')
 });
 
-// get random facts
+// add random facts
 
 app.post ('/facts', (req,res) =>{
-    res.json('adding random Fact')
+    const body = req.body;
+    console.log(req);   
+
+    factsArray.push(body);
+
+    res.json('Fact success added')
+
     // randomFacts.push()
 });
 
