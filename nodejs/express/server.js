@@ -9,7 +9,8 @@
 
 // let monaFacts =['crazy','tired','german','grandma','old']
 //  document.write(monaFacts);   
-import express from 'express';
+const express = require ('express');
+// import { randomFacts } from './facts';
 
 const app = express();
 
@@ -20,6 +21,10 @@ app.listen(port, () =>{
 })
 
 //get random fact
+
+app.get ('./facts', (req,res) =>{
+    res.json('Getting random Fact')
+});
 
 //get all the facts
 
