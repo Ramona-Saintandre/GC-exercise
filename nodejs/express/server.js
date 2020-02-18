@@ -31,4 +31,21 @@ app.get ('/facts', (req,res) =>{
 app.get ('/facts-all', (req,res) =>{
     res.json('Getting all random Fact')
 });
-//
+
+// get random facts
+
+app.post ('/facts', (req,res) =>{
+    res.json('adding random Fact')
+});
+
+//updating random facts
+
+app.put ('/facts', (req,res) =>{
+    res.json('update random Fact')
+});
+// delete random facts
+
+app.delete ('/facts', (req,res) =>{
+    res.json('Getting random Fact')
+});
+
