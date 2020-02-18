@@ -22,10 +22,13 @@ app.listen(port, () =>{
 
 //get random fact
 
-app.get ('./facts', (req,res) =>{
+app.get ('/facts', (req,res) =>{
     res.json('Getting random Fact')
 });
 
 //get all the facts
 
+app.get ('/facts-all', (req,res) =>{
+    res.json('Getting all random Fact')
+});
 //
