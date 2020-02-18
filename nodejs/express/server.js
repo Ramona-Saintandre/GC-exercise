@@ -36,16 +36,19 @@ app.get ('/facts-all', (req,res) =>{
 
 app.post ('/facts', (req,res) =>{
     res.json('adding random Fact')
+    // randomFacts.push()
 });
 
 //updating random facts
 
 app.put ('/facts', (req,res) =>{
+    // randonFacts.splice(index, 1, newFact)
     res.json('update random Fact')
 });
 // delete random facts
 
 app.delete ('/facts', (req,res) =>{
+    // randomFActs.
     res.json('Getting random Fact')
 });
 
