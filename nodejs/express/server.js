@@ -11,6 +11,7 @@
 //  document.write(monaFacts);   
 const express = require ('express');
 // import { randomFacts } from './facts';
+const facts = require (',/facts');
 
 const app = express();
 
