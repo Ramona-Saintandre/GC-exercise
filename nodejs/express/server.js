@@ -10,16 +10,18 @@
 // let monaFacts =['crazy','tired','german','grandma','old']
 //  document.write(monaFacts);   
 
-const express = require ('express');
-
+const express = require('express');
+// app.use(express.json());
 // import { randomFacts } from './facts';
 const facts = require (',/facts');
 const factsArray = facts.randomFacts;
-const 
+
 
 const app = express();
 
 const port = 3000;
+// need this anytime you want to get data
+app.use(express.data);
 
 app.listen(port, () =>{
     console.log('listening on htttp://lochost:${port}')
