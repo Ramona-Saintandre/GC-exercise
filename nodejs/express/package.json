@@ -8,5 +8,6 @@
     "start": "node server.js"
   },
   "author": "ramona saintandre",
-  "license": "ISC"
+  "license": "ISC",
+  "type":"module"
 }
